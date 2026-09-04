@@ -1,0 +1,93 @@
+# QUICK REFERENCE - Files to Edit
+
+## YOUR PERSONAL INFORMATION
+📄 **File:** `src/data/profile.ts`
+- Your name
+- Your title
+- Your email & phone
+- Your bio
+- GitHub URL
+- LinkedIn URL
+- Profile photo path
+- Resume PDF path
+
+---
+
+## YOUR WORK HISTORY
+📄 **File:** `src/data/experience.ts`
+- Add/edit your jobs
+- Company names
+- Responsibilities
+- Technologies used
+- Dates
+
+---
+
+## YOUR PROJECTS
+📄 **File:** `src/data/projects.ts`
+- Project names & descriptions
+- Security focus areas
+- Technologies used
+- GitHub links
+- Demo links
+- Mark as featured or not
+
+---
+
+## YOUR SKILLS
+📄 **File:** `src/data/skills.ts`
+- Skill categories (Cybersecurity, Programming, etc.)
+- Individual skills in each category
+
+---
+
+## YOUR CERTIFICATIONS
+📄 **File:** `src/data/certifications.ts`
+- Certification names
+- Issuing organizations
+- Dates earned
+- Credential IDs
+- Verification links
+- Mark as featured
+
+---
+
+## YOUR EDUCATION
+📄 **File:** `src/data/education.ts`
+- Degree type
+- Institution name
+- Field of study
+- Dates attended
+- Specializations
+
+---
+
+## YOUR PHOTO
+📁 **Folder:** `public/assets/profile/`
+- Replace `profile-photo.svg` with your photo
+- Name: `profile-photo.jpg` or `.png` or `.webp`
+- Size: 300x300px recommended
+- Update path in `profile.ts` if you change the name
+
+---
+
+## YOUR RESUME
+📁 **Folder:** `public/assets/resume/`
+- Place your resume PDF here
+- Name: `Saqib_Rahi_Resume.pdf` (or any name)
+- Update path in `profile.ts` if you change the name
+
+---
+
+## OPTIONAL: COLORS
+📄 **File:** `src/index.css`
+- Find `:root` section
+- Change `--accent: #10b981` to your preferred color
+
+---
+
+## THAT'S IT!
+
+Just update these files with YOUR information, add your photo and resume, and deploy to GitHub Pages.
+
+See `CUSTOMIZATION_GUIDE.md` for detailed instructions.
