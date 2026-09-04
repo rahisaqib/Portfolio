@@ -1,0 +1,106 @@
+.education {
+  background: linear-gradient(135deg, rgba(31, 41, 55, 0.5) 0%, rgba(15, 20, 25, 0) 100%);
+}
+
+.education h2 {
+  text-align: center;
+  margin-bottom: var(--spacing-md);
+  position: relative;
+  padding-bottom: var(--spacing-lg);
+}
+
+.education h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: var(--gradient-primary);
+  border-radius: 2px;
+}
+
+.education-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: var(--spacing-2xl);
+  margin-top: var(--spacing-3xl);
+}
+
+.education-item {
+  display: flex;
+  gap: var(--spacing-lg);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: var(--spacing-2xl);
+  transition: all 0.3s ease;
+  align-items: flex-start;
+}
+
+.education-item:hover {
+  background: var(--bg-tertiary);
+  border-color: var(--accent);
+  transform: translateX(8px);
+}
+
+.edu-icon {
+  font-size: 2.5rem;
+  flex-shrink: 0;
+}
+
+.edu-content {
+  flex: 1;
+}
+
+.education-item h3 {
+  font-size: var(--text-lg);
+  margin-bottom: var(--spacing-sm);
+  color: var(--text-primary);
+}
+
+.institution {
+  color: var(--accent);
+  font-weight: 600;
+  font-size: var(--text-base);
+  margin-bottom: var(--spacing-xs);
+}
+
+.field {
+  color: var(--text-secondary);
+  font-size: var(--text-sm);
+  margin-bottom: var(--spacing-xs);
+}
+
+.specialization {
+  color: var(--text-secondary);
+  font-size: var(--text-sm);
+  margin-bottom: var(--spacing-xs);
+  font-style: italic;
+}
+
+.dates {
+  color: var(--text-tertiary);
+  font-size: var(--text-sm);
+  margin-top: var(--spacing-md);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .education-list {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+
+  .education-item {
+    padding: var(--spacing-lg);
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .education-item:hover {
+    transform: translateY(-5px);
+  }
+}
