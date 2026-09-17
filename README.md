@@ -105,7 +105,7 @@ All content lives in a single file: [`index.html`](index.html)
 
 - **Wolf Hunter** — Open-source web app security testing framework with ~30 modules (SQLi, XSS, CSRF, JWT, OWASP Top 10). Repo: [github.com/rahisaqib/Wolf-Hunter](https://github.com/rahisaqib/Wolf-Hunter)
 - **TryHackMe** — Top 10% globally across 53+ hands-on labs in web, network, and Linux security
-- **CYBERSRA Internship** — 6-month client-facing VAPT internship (Jan–Jul 2026), full lifecycle from scoping to reporting
+- **CYBERSRA Internship** — 7-month client-facing VAPT internship (Jan–Jul 2026), full lifecycle from scoping to reporting
 
 ---
 
