@@ -1,301 +1,114 @@
-# Saqib Rahi - Cybersecurity Professional Portfolio
+# Saqib Rahi — Cybersecurity Analyst | VAPT & Application Security
 
-A modern, premium personal portfolio website built with React + Vite showcasing cybersecurity expertise in VAPT, vulnerability assessment, and penetration testing.
+Personal portfolio website for **Saqib Rahi** — B.Tech Cybersecurity graduate, VAPT intern at CYBERSRA, builder of the Wolf Hunter security testing framework, and TryHackMe Top 10% global ranker.
 
-## ✨ Features
-
-- **Premium Design**: Dark-themed cybersecurity aesthetic inspired by modern companies like Linear, Vercel, and Raycast
-- **Responsive**: Optimized for desktop, tablet, and mobile devices
-- **Fast Performance**: Built with Vite for lightning-fast development and production builds
-- **SEO Optimized**: Complete meta tags, structured data, and semantic HTML
-- **Accessible**: WCAG compliant with keyboard navigation and reduced-motion support
-- **Smooth Animations**: Subtle, professional transitions and micro-interactions
-- **Theme Toggle**: Light/dark mode with localStorage persistence
-- **GitHub Pages Ready**: Configured for easy deployment to GitHub Pages
-
-## 🛠 Tech Stack
-
-- **React 18** - UI framework
-- **TypeScript** - Type safety
-- **Vite** - Build tool and dev server
-- **CSS3** - Modern styling with CSS variables
-- **Vanilla JS** - No unnecessary dependencies
-
-## 📋 Sections
-
-- **Home/Hero** - Professional introduction with profile photo and CTA buttons
-- **About** - Professional bio and key statistics
-- **Expertise** - Cybersecurity specializations (Vulnerability Assessment, Penetration Testing, Web App Security, API Security, etc.)
-- **Experience** - Professional timeline with responsibilities and technologies
-- **Projects** - Featured cybersecurity projects with GitHub links
-- **Skills** - Technical skills organized by category
-- **Certifications** - Professional certifications and credentials
-- **Education** - Academic background and specializations
-- **Contact** - Multiple ways to get in touch
-- **Footer** - Navigation and social links
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-- Node.js 16+ and npm (or yarn/pnpm)
-
-### Local Development
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/rahisaqib/Portfolio.git
-   cd Portfolio
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Start development server**
-   ```bash
-   npm run dev
-   ```
-   Opens at `http://localhost:3000`
-
-4. **Build for production**
-   ```bash
-   npm run build
-   ```
-
-5. **Preview production build**
-   ```bash
-   npm run preview
-   ```
-
-## 📝 Customization
-
-### Edit Profile Information
-
-Update `src/data/profile.ts`:
-```typescript
-export const profile = {
-  name: 'Your Name',
-  title: 'Your Title',
-  email: 'your-email@example.com',
-  social: {
-    github: 'https://github.com/yourname',
-    linkedin: 'https://linkedin.com/in/yourname',
-    email: 'your-email@example.com'
-  }
-}
-```
-
-### Update Experience
-
-Edit `src/data/experience.ts` to add/modify work experience entries.
-
-### Add/Update Projects
-
-Modify `src/data/projects.ts` to showcase your projects:
-```typescript
-{
-  name: 'Project Name',
-  description: 'Description',
-  focus: 'Security Focus Area',
-  technologies: ['Tech1', 'Tech2'],
-  github: 'https://github.com/...',
-  featured: true
-}
-```
-
-### Update Skills
-
-Edit `src/data/skills.ts` - skills are organized by category.
-
-### Update Certifications
-
-Modify `src/data/certifications.ts`:
-```typescript
-{
-  name: 'Certification Name',
-  issuer: 'Organization',
-  date: '2023',
-  credentialId: 'ID',
-  verificationLink: 'https://...',
-  featured: true
-}
-```
-
-### Update Education
-
-Edit `src/data/education.ts` for education entries.
-
-### Profile Photo
-
-1. Replace photo at: `public/assets/profile/profile-photo.webp`
-2. Use WebP format for best performance (recommended: 300x300px, optimized size)
-3. To use a different name, update the path in `src/data/profile.ts`
-
-### Resume
-
-1. Place your resume at: `public/assets/resume/Saqib_Rahi_Resume.pdf`
-2. The "Download Resume" button uses this path
-3. To use a different filename, update `src/data/profile.ts`
-
-### Contact Information
-
-Update in `src/data/profile.ts`:
-```typescript
-email: 'your-email@example.com',
-phone: '+92-300-XXXXXXX',
-location: 'Your Location',
-social: {
-  github: 'https://github.com/yourname',
-  linkedin: 'https://linkedin.com/in/yourname',
-  email: 'your-email@example.com'
-}
-```
-
-## 🌐 GitHub Pages Deployment
-
-### First-time Setup
-
-1. **Create a GitHub repository** named `Portfolio` (or your preferred name)
-
-2. **Configure Vite base URL**:
-   - Update `vite.config.ts` if your repo isn't at `username.github.io`
-   - For `username/Portfolio`: set `base: '/Portfolio/'`
-   - For `username.github.io`: set `base: '/'`
-
-3. **Enable GitHub Pages**:
-   - Go to repository Settings → Pages
-   - Select "Deploy from a branch"
-   - Choose `main` (or your default branch) and `/root` folder
-
-### Deployment Steps
-
-1. **Build the project**
-   ```bash
-   npm run build
-   ```
-
-2. **Commit and push**
-   ```bash
-   git add .
-   git commit -m "Build portfolio"
-   git push origin main
-   ```
-
-3. **View your site**
-   - Wait 1-2 minutes for GitHub Pages to build
-   - Visit: `https://username.github.io/Portfolio`
-
-### Automated Deployment (Optional)
-
-Use the included GitHub Actions workflow for automatic deployment:
-- Located at `.github/workflows/deploy.yml`
-- Automatically builds and deploys on push to main
-- Commits the `dist/` folder to `gh-pages` branch
-
-```bash
-# Just push code and it deploys automatically!
-git push origin main
-```
-
-## 🎨 Customizing Design
-
-### Colors
-
-Edit CSS variables in `src/index.css`:
-```css
-:root {
-  --accent: #10b981;  /* Primary accent color */
-  --bg-primary: #0f1419;  /* Main background */
-  --text-primary: #e8eaed;  /* Main text color */
-  /* ... more variables */
-}
-```
-
-### Fonts
-
-Default uses system fonts. To add custom fonts:
-1. Add Google Fonts link to `index.html` `<head>`
-2. Update font-family in `src/index.css`
-
-### Animations
-
-Adjust animation speeds and effects in component CSS files.
-
-### Dark/Light Mode
-
-The site detects system preference and allows manual toggling:
-- Theme is saved to localStorage
-- CSS variables automatically adapt
-
-## 📊 SEO
-
-The site includes:
-- Meta descriptions and Open Graph tags
-- Structured data (JSON-LD Person schema)
-- Semantic HTML
-- Proper heading hierarchy
-- Image alt text
-- Mobile-friendly responsive design
-- sitemap potential (can be added)
-
-## ♿ Accessibility
-
-Features include:
-- Semantic HTML5
-- ARIA labels where needed
-- Keyboard navigation support
-- Focus visible states
-- Reduced motion support
-- Proper color contrast
-- Alt text for images
-
-## 📱 Mobile Optimization
-
-The site is fully responsive:
-- Mobile-first design approach
-- Touch-friendly interactions
-- Optimized for all screen sizes
-- Premium experience on iPhone/iPad
-
-## ⚡ Performance
-
-- Optimized images (WebP format recommended)
-- Minimal JavaScript
-- CSS optimizations
-- No unnecessary dependencies
-- Vite's fast build system
-- Target Lighthouse score: 90+
-
-## 🔒 Security
-
-- No sensitive data in frontend code
-- No API keys or secrets exposed
-- Safe external links (rel="noopener noreferrer")
-- Content Security Policy ready
-
-## 📄 License
-
-Free to use and modify for your personal portfolio.
-
-## 💡 Tips
-
-- Keep data files (`src/data/*`) updated as your experience grows
-- Regularly update projects to showcase latest work
-- Use high-quality, optimized images
-- Test on mobile devices before sharing
-- Get feedback from peers in cybersecurity community
-- Share on LinkedIn, GitHub, and in job applications
-
-## 🤝 Support
-
-For issues or improvements:
-1. Check existing documentation
-2. Review component comments
-3. Refer to Vite documentation
-4. Test in different browsers
+🌐 **Live site:** [rahisaqib.github.io/Portfolio](https://rahisaqib.github.io/Portfolio/)
 
 ---
 
-Built with ❤️ for showcasing cybersecurity excellence.
+## 👤 About
+
+| | |
+|---|---|
+| **Name** | Saqib Rahi |
+| **Role** | Cybersecurity Analyst · VAPT & Application Security |
+| **Location** | Saharanpur, Uttar Pradesh, India |
+| **Email** | saqibrahi9058@gmail.com |
+| **Phone** | +91-9058513227 |
+| **LinkedIn** | [linkedin.com/in/saqib-rahi](https://www.linkedin.com/in/saqib-rahi/) |
+| **GitHub** | [github.com/rahisaqib](https://github.com/rahisaqib) |
+| **TryHackMe** | [tryhackme.com/p/bluewolf0364](https://tryhackme.com/p/bluewolf0364) — Top 10% Global |
+
+---
+
+## 📋 Portfolio Sections
+
+- **Hero** — Introduction, contact details, and links
+- **About** — Professional summary and key stats (TryHackMe rank, Wolf Hunter modules, VAPT internship)
+- **Technical Skills** — Security testing, tools (Burp Suite, Nmap, Metasploit, Wireshark, Hydra…), programming, OS
+- **Experience** — CYBERSRA VAPT internship (Jan 2026 – Jul 2026)
+- **Projects** — Wolf Hunter framework + TryHackMe labs profile
+- **Education** — DIT University B.Tech CSE (Cybersecurity), 2021–2025
+- **Contact** — Email, phone, LinkedIn, GitHub, TryHackMe
+
+---
+
+## ⚙️ Tech Stack
+
+This portfolio is a **single self-contained `index.html`** — no build step, no framework, no dependencies.
+
+| | |
+|---|---|
+| **HTML/CSS/JS** | Vanilla, fully inlined |
+| **Deployment** | GitHub Pages via GitHub Actions |
+| **Build step** | None — files are deployed directly |
+
+---
+
+## 🚀 Deployment
+
+The site deploys automatically on every push to `main` via `.github/workflows/deploy.yml`.
+
+### Manual deploy steps
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/rahisaqib/Portfolio.git
+cd Portfolio
+
+# 2. Edit index.html with your changes
+
+# 3. Commit and push — GitHub Actions handles the rest
+git add index.html
+git commit -m "Update portfolio"
+git push origin main
+```
+
+### GitHub Pages setup (one-time)
+
+1. Go to **Settings → Pages** in this repository
+2. Under **Build and deployment → Source**, select **GitHub Actions**
+3. Save — the workflow will deploy on the next push
+
+---
+
+## 🔧 Customisation
+
+All content lives in a single file: [`index.html`](index.html)
+
+| What to change | Where in `index.html` |
+|---|---|
+| Name / role / summary | `<!-- HERO -->` section |
+| Contact details | `hero-meta` div + `<!-- CONTACT -->` section |
+| Skills | `<!-- SKILLS -->` section |
+| Work experience | `<!-- EXPERIENCE -->` section |
+| Projects | `<!-- PROJECTS -->` section |
+| Education | `<!-- EDUCATION -->` section |
+| Colours / fonts | `<style>` block — CSS variables in `:root` |
+
+### Key CSS variables
+
+```css
+:root {
+  --accent:  #10b981;   /* green highlight colour */
+  --bg:      #0d1117;   /* main background (dark) */
+  --bg2:     #161b22;   /* secondary background */
+  --text:    #e6edf3;   /* primary text */
+  --muted:   #8b949e;   /* secondary text */
+  --border:  #30363d;   /* card borders */
+}
+```
+
+---
+
+## 🌟 Highlights
+
+- **Wolf Hunter** — Open-source web app security testing framework with ~30 modules (SQLi, XSS, CSRF, JWT, OWASP Top 10). Repo: [github.com/rahisaqib/Wolf-Hunter](https://github.com/rahisaqib/Wolf-Hunter)
+- **TryHackMe** — Top 10% globally across 53+ hands-on labs in web, network, and Linux security
+- **CYBERSRA Internship** — 6-month client-facing VAPT internship (Jan–Jul 2026), full lifecycle from scoping to reporting
+
+---
+
+## 📄 License
+
+Free to fork and adapt for your own portfolio.
