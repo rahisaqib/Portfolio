@@ -68,8 +68,8 @@
       display: flex; align-items: center; justify-content: space-between;
       height: 60px;
     }
-    .logo { font-size: 1.2rem; font-weight: 700; color: var(--text); }
-    .logo span { color: var(--accent); }
+    .logo { display: flex; align-items: center; text-decoration: none; }
+    .logo img { height: 40px; width: 40px; border-radius: 50%; object-fit: cover; }
     nav { display: flex; gap: 0.25rem; flex-wrap: wrap; }
     nav a {
       color: var(--muted); font-size: 0.85rem; padding: 0.35rem 0.65rem;
@@ -338,7 +338,9 @@
 <!-- HEADER -->
 <header id="site-header">
   <div class="container header-inner">
-    <div class="logo"><span>{</span>SR<span>}</span></div>
+    <a href="#home" class="logo">
+      <img src="public/assets/logo.png" alt="Saqib Rahi Logo" />
+    </a>
     <nav id="main-nav">
       <a href="#home" class="active">Home</a>
       <a href="#about">About</a>
@@ -695,8 +697,12 @@
 <!-- FOOTER -->
 <footer>
   <div class="container">
+    <div style="display:flex;align-items:center;justify-content:center;gap:0.75rem;margin-bottom:0.6rem;">
+      <img src="public/assets/logo.png" alt="Saqib Rahi Logo" style="height:36px;width:36px;border-radius:50%;object-fit:cover;" />
+      <strong>Saqib Rahi</strong>
+    </div>
     <p>
-      <strong>Saqib Rahi</strong> — Cybersecurity Analyst | VAPT &amp; Application Security &nbsp;·&nbsp;
+      Cybersecurity Analyst | VAPT &amp; Application Security &nbsp;·&nbsp;
       <a href="https://github.com/rahisaqib" target="_blank" rel="noopener noreferrer">GitHub</a> &nbsp;·&nbsp;
       <a href="https://www.linkedin.com/in/saqib-rahi/" target="_blank" rel="noopener noreferrer">LinkedIn</a> &nbsp;·&nbsp;
       <a href="https://tryhackme.com/p/bluewolf0364" target="_blank" rel="noopener noreferrer">TryHackMe</a>
