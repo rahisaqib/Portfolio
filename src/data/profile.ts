@@ -6,7 +6,7 @@ export const profile = {
   phone: '+92-300-XXXXXXX',
   location: 'Pakistan',
   bio: 'I am a dedicated cybersecurity professional with hands-on experience in vulnerability assessment and penetration testing (VAPT). I specialize in identifying security vulnerabilities in web applications, APIs, and network infrastructure. My expertise spans reconnaissance, vulnerability validation, security testing methodologies, and remediation verification.',
-  profileImage: '/assets/profile/profile-photo.svg',
+  profileImage: '/assets/profile/profile-photo.png',
   resume: '/assets/resume/Saqib_Rahi_Resume.pdf',
   social: {
     github: 'https://github.com/rahisaqib',

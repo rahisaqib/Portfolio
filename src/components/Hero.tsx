@@ -52,9 +52,7 @@ const Hero = ({ setActiveSection }: HeroProps) => {
 
         <div className="hero-visual">
           <div className="profile-image-container">
-            {profile.profileImage && (
-              <img src={profile.profileImage} alt={profile.name} className="profile-image" />
-            )}
+            <img src="/assets/profile/profile-photo.png" alt={profile.name} className="profile-image" />
             <div className="profile-glow"></div>
           </div>
         </div>
